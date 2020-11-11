@@ -25,10 +25,3 @@ spec:
           subset: v2
           port:
             number: 9080
-        weight: 50
-      - destination:
-          host: productpage
-          subset: v2
-          port:
-            number: 9080
-        weight: 50
