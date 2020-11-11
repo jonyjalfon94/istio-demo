@@ -18,8 +18,9 @@ spec:
         port:
           number: 9080
         subset: v2
-    - destination:
-        host: productpage
-        port:
-          number: 9080
-        subset: v1
+    - route:
+      - destination:
+          host: productpage
+          port:
+            number: 9080
+          subset: v1
