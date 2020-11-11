@@ -67,8 +67,8 @@ spec:
           end-user:
             exact: tester         
     route:
-      - destination:
-          host: productpage
-          subset: v2
-          port:
-            number: 9080
+    - destination:
+        host: productpage
+        subset: v2
+        port:
+          number: 9080
