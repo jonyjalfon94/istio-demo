@@ -56,7 +56,7 @@ spec:
     - headers:
         end_user:
           exact: tester
-    - route:
+    route:
       - destination:
           host: productpage
           subset: v2
