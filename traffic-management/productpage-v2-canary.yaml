@@ -19,9 +19,16 @@ spec:
           exact: /logout
       - uri:
           prefix: /api/v1/products     
-    - route:
-      - destination:
-          host: productpage
-          subset: v2
-          port:
-            number: 9080
+  route:
+  - destination:
+      host: productpage
+      subset: v2
+      port:
+        number: 9080
+      weight: 50
+  - destination:
+        host: productpage
+        subset: v2
+        port:
+          number: 9080
+        weight: 50
