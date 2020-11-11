@@ -54,8 +54,8 @@ spec:
   http:
   - match:
     - headers:
-      end_user:
-        exact: tester
+        end_user:
+          exact: tester
     - route:
         - destination:
             host: productpage
